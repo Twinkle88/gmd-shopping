@@ -1,0 +1,7 @@
+server:
+  port: 9000
+  
+eureka:  instance:    hostname: localhost           #设置Eureka服务器的名字
+  client:    register-with-eureka: false   #设置本项目不需要注册到Eureka服务器中
+    fetch-registry: false         #不需要检索服务    service-url:      defaultZone: http://localhost:8061/eureka/  #设置Eureka Client(Provider)注册服务的URL
+      
